@@ -143,7 +143,7 @@
 
             <section class="bg-slate-900/20 p-6 md:p-8 rounded-2xl shadow-2xl">
                 <h2 class="text-3xl font-bold text-center mb-6 text-white">Unbreakable Connection</h2>
-                <p class="text-slate-300 mb-6 text-center">RideSync uses a hybrid system to ensure you're always connected. It intelligently switches between the cloud and a direct device-to-device mesh network.</p>
+                <p class="text-slate-300 mb-6 text-center">For single-OS groups, RideSync uses a hybrid system that intelligently switches between the cloud and a direct P2P mesh network based on internet availability.</p>
                 <div class="text-center">
                     <div class="flow-box p-4 rounded-lg inline-block">
                         <h3 class="font-bold">Group Starts Trip</h3>
@@ -167,6 +167,36 @@
                                 <h3 class="font-bold text-red-400">NO</h3>
                                 <p class="text-sm text-slate-300">P2P Mesh Network for Offline Connectivity</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:col-span-2 bg-slate-900/20 p-6 md:p-8 rounded-2xl shadow-2xl">
+                <h2 class="text-3xl font-bold text-center mb-6 text-white">Solving the Cross-Platform Challenge</h2>
+                <p class="text-center text-slate-300 mb-8 max-w-3xl mx-auto">Native mesh technologies on Android and iOS are incompatible. RideSync detects the group's makeup and deploys the right strategy for seamless communication.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-slate-800/50 p-6 rounded-lg">
+                        <h3 class="font-bold text-center text-xl mb-4 text-white">Scenario 1: Single OS Group</h3>
+                        <p class="text-center text-slate-300 text-sm mb-4">The app enables the high-performance native mesh network for superior offline capability.</p>
+                        <div class="flex justify-center items-center space-x-4">
+                            <span class="text-4xl">🤖</span>
+                            <span class="text-2xl font-bold text-ffa600">⬄</span>
+                            <span class="text-4xl">🤖</span>
+                        </div>
+                         <div class="flex justify-center items-center space-x-4 mt-2">
+                            <span class="text-4xl"></span>
+                            <span class="text-2xl font-bold text-ffa600">⬄</span>
+                            <span class="text-4xl"></span>
+                        </div>
+                    </div>
+                     <div class="bg-slate-800/50 p-6 rounded-lg">
+                        <h3 class="font-bold text-center text-xl mb-4 text-white">Scenario 2: Mixed OS Group</h3>
+                        <p class="text-center text-slate-300 text-sm mb-4">The mesh feature is disabled and the app relies on the cloud to ensure everyone stays connected.</p>
+                        <div class="flex justify-center items-center space-x-4">
+                            <span class="text-4xl">🤖</span>
+                             <span class="text-2xl font-bold text-7a5195">→ ☁️ ←</span>
+                            <span class="text-4xl"></span>
                         </div>
                     </div>
                 </div>
@@ -324,7 +354,11 @@
                 plugins: {
                     legend: {
                         position: 'bottom',
-                        labels: { color: '#f1f5f9' }
+                        labels: {
+                            color: '#f1f5f9',
+                            boxWidth: 20,
+                            padding: 25
+                        }
                     },
                     tooltip: { callbacks: { title: tooltipTitleCallback } }
                 }
@@ -350,7 +384,11 @@
                 plugins: {
                     legend: {
                         position: 'bottom',
-                        labels: { color: '#f1f5f9' }
+                        labels: {
+                            color: '#f1f5f9',
+                            boxWidth: 20,
+                            padding: 25
+                        }
                     },
                     tooltip: { callbacks: { title: tooltipTitleCallback } }
                 }
